@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	float sum=1.0,t,s=1;
+	int i;
+	for(i=1;i<100;i++)
+	{
+		t=s/i;
+		sum=sum+t;
+		s=-s;
+	}
+	printf("%d",sum);
+	return 0;
+}
