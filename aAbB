@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	char ch1='a',ch2='A';
+	while(ch1<='z')
+	{
+		printf("%c",ch1);ch1++;
+		printf("%c",ch2);ch2++;
+	}
+	printf("\n");
+	return 0;
+}
