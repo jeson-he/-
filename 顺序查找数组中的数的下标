@@ -1,0 +1,22 @@
+#include<stdio.h>
+const int m = 10;
+int fact(int a[], int x, int n)
+{
+	int i;
+	for (i = 0; i<n; i++)
+	{
+		if (x == a[i])
+			return i;
+
+
+	}
+	return -1;//这个如果再for循环中，有错误。
+
+}
+int main()
+{
+	int b[] = { 1,2,3,4 };
+	int s;
+	s = fact(b, 3, 4);
+	printf("%d", s);
+}
