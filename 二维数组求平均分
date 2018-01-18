@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	double a[4][3]={89,78,56,88,99,100,72,80,61,60,70,75},aver[4]={0};
+	
+	int i,j;
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			aver[i]=aver[i]+a[i][j];
+			
+		}
+                aver[i]/=3;//在循环之外
+	}
+	for(i=0;i<4;i++)
+	{
+		printf("%f\n",aver[i]);
+	}
+	return 0;
+}
