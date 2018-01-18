@@ -1,0 +1,23 @@
+#include<stdio.h>
+void fact(int b[],int n)
+{
+	int i,t;
+	for(i=0;i<n/2;i++)
+	{
+		t=b[i];
+		b[i]=b[n-1-i];
+		b[n-1-i]=t;
+	}
+}
+int main()
+{
+	int a[]={7,2,5,4,3,6,1};
+	int j;
+	fact(a,7);
+	for(j=0;j<7;j++)//这里j=1的话，出现错误。数组从0开始。
+	{
+		printf("%d ",a[j]);
+	}
+	return 0;
+	
+}
